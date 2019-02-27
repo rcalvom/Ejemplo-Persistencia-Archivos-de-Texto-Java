@@ -12,6 +12,9 @@ public class Fecha {
         this.anio = anio;
     }
 
+    public Fecha() {
+    }
+
     public int getDia() {
         return dia;
     }

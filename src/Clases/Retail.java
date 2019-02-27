@@ -11,6 +11,14 @@ public class Retail extends Eslabon{
         super(nombre, descripcion, ubicacion);
         this.productosVenta = new ArrayList<>();
     }
+    
+    public Retail(){
+        super(null, null, null);
+        this.fechaLlegada = new Fecha();
+        this.fechaSalida = new Fecha();
+        this.ubicacion = new Ubicacion();
+
+    }
 
     @Override
     public boolean Envio(Eslabon eslabon) {

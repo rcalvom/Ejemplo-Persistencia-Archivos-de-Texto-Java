@@ -11,6 +11,11 @@ public class MateriaPrima {
         this.granja = granja;
     }
 
+    public MateriaPrima() {
+        this.granja = new Farm();
+    }
+    
+
     public String getNombre() {
         return nombre;
     }

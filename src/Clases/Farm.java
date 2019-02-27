@@ -9,7 +9,13 @@ public class Farm extends Eslabon {
     
     public Farm(String nombre, String descripcion, Ubicacion ubicacion) {
         super(nombre, descripcion, ubicacion);
+        this.materiasPrimas = new ArrayList<>();
     }
+    public Farm(){
+        super(null, null, null);
+        this.materiasPrimas = new ArrayList<>();
+    }
+    
 
     @Override
     public boolean Envio(Eslabon eslabon) {

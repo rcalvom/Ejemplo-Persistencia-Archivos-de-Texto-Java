@@ -10,6 +10,9 @@ public class Ubicacion {
         this.longitud = longitud;
     }
 
+    public Ubicacion() {
+    }
+
     public float getLatitud() {
         return latitud;
     }

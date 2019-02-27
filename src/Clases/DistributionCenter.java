@@ -11,6 +11,14 @@ public class DistributionCenter extends Eslabon{
         super(nombre, descripcion, ubicacion);
         this.productosDistribuir = new ArrayList<>();
     }
+    
+    public DistributionCenter(){
+        super(null, null, null);
+        this.fechaLlegada = new Fecha();
+        this.fechaSalida = new Fecha();
+        this.ubicacion = new Ubicacion();
+
+    }
 
     @Override
     public boolean Envio(Eslabon eslabon) {
